@@ -16,12 +16,52 @@
 
   position: absolute;
   animation-name: move-div;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+.example-1 div:nth-child(0) {
+ animation-delay: 0;
+}
+.example-1 div:nth-child(1) {
+  
+ animation-delay: -1.4285s;
+}
+.example-1 div:nth-child(2) {
+  animation-delay: -2.85s;
+}
+.example-1 div:nth-child(3) {
+  animation-delay: -4.28s;
+}
+.example-1 div:nth-child(4) {
+  animation-delay: -5.71s;
+}
+.example-1 div:nth-child(5) {
+  animation-delay: -6.10s;
+}
+.example-1 div:nth-child(6) {
+  animation-delay: -7.5s;
+}
+.example-1 div:nth-child(7) {
+  animation-delay: -8.75s;
 }
 
-@keyframes move-div {
+
+
+/* .example-1 div:nth-child(0) {
+  animation-delay: 0s;
+}
+.example-1 div:nth-child(1) {
+  animation-delay: -2.5s;
+}
+.example-1 div:nth-child(2) {
+  animation-delay: -5s;
+}
+.example-1 div:nth-child(3) {
+  animation-delay: -7.5s;
+} */
+/* @keyframes move-div {
   0% {
     top: 0;
     left: 0;
@@ -45,6 +85,93 @@
   100% {
     top: 0px;
     left: 0px;
+    background-color: blue;
+  }
+} */
+@keyframes move-div {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: blue;
+  }
+  10.5% {
+    top: 0;
+    left: 0;
+  }
+  12.5% {
+    top: 0px;
+    left: 50px;
+    background-color: blueviolet;
+  }
+  23% {
+    top: 0;
+    left: 50px;
+  }
+  25% {
+   top: 0;
+   left: 100px;
+   background-color: violet;
+  }
+  35.5% {
+    top: 0;
+    left: 100px;
+  }
+  
+  37.5% {
+    top: 50px;
+    left: 100px;
     background-color: darkmagenta;
+
+  }
+  48% {
+    top: 50px;
+    left: 100px;
+  }
+  50%{
+    top: 50px;
+    left: 50px;
+    background-color: darkorange;
+
+  }
+  60.5% {
+    top: 50px;
+    left: 50px;
+  }
+  62.5%{
+    top: 100px;
+    left: 50px;
+    background-color: crimson;
+
+  }
+  73.5% {
+    top: 100px;
+    left: 50px;
+  }
+  75.5%{
+    top: 100px;
+    left: 0;
+    background-color: deeppink;
+
+  }
+  85.5% {
+    top: 100px;
+    left: 0;
+  }
+  87.5% {
+    top: 50px;
+    left: 0px;
+    background-color: greenyellow;
+
+  }
+  98% {
+    top: 50px;
+    left: 0;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background-color: blue;
   }
 }
+
+
